@@ -1,6 +1,8 @@
 # Bank-Account-Kata
 
 [![Build Status](https://travis-ci.org/newlight77/kata-bank-account.svg?branch=master)](https://travis-ci.org/newlight77/kata-bank-account)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5215148bf0b74c26470a/maintainability)](https://codeclimate.com/github/newlight77/kata-bank-account/maintainability)
+[![BetterCodeHub compliance](https://bettercodehub.com/edge/badge/newlight77/kata-bank-account?branch=master)](https://bettercodehub.com/)
 
 ## Kata Statement
 
