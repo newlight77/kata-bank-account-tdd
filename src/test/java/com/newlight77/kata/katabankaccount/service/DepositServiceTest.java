@@ -55,4 +55,18 @@ public class DepositServiceTest {
         Assertions.assertThat(balance).isEqualTo(-100.00);
     }
 
+    @Test
+    public void shoulNotAllowdWithdralWithNegativeAmount() {
+
+        // Arrange
+        service = new OperationService();
+        double amount = -100;
+
+        // Act
+        double balance = service.withdraw(amount);
+
+        // Assert
+        Assertions.assertThat(balance).isNotEqualTo(100.00);
+        Assertions.assertThat(balance).isNotEqualTo(-100.00);
+    }
 }
