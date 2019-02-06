@@ -26,4 +26,16 @@ public class DepositServiceTest {
         Assertions.assertThat(balance).isEqualTo(100.00);
     }
 
+    @Test
+    public void shouldNotAllowDepositNegativeAmount() {
+        // Arrange
+        double amount = -100;
+
+        // Act
+        double balance = service.deposit(amount);
+
+        // Assert
+        Assertions.assertThat(balance).isNotEqualTo(-100.00);
+
+    }
 }
