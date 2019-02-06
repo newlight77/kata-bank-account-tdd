@@ -6,7 +6,9 @@ public class WithdrawService {
 
     public double withdraw(double amount) {
 
-        return 0;
+        balance -= amount;
+
+        return balance;
     }
 
 }
