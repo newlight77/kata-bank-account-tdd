@@ -36,6 +36,16 @@ Start from the simplest to the most complex cases by taking baby steps.
 
 I'm using Springboot with Java.
 
+### Divide to conquer
+
+We are going slice all rules per User Story :
+
+* US1 : Deposit (negative not permitted)
+* US2 : Withdrawal (negative not permitted)  
+* US3 : GetBalance  
+* US4 : Account statement (date, quantity, balance) 
+* US5 : Statement printing 
+
 ### Methodology
 
 I'll proceed with TDD and cover every single rule with small commits to represent the work per step.
