@@ -6,6 +6,10 @@ public class DepositService {
 
     public double deposit(double amount) {
 
+        if (amount < 0) {
+            throw new IllegalArgumentException("The amount for deposit must be positif");
+        }
+
         balance += amount;
 
         return balance;

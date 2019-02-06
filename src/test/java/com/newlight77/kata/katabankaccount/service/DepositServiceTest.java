@@ -26,7 +26,7 @@ public class DepositServiceTest {
         Assertions.assertThat(balance).isEqualTo(100.00);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void shouldNotAllowDepositNegativeAmount() {
         // Arrange
         double amount = -100;
@@ -35,7 +35,6 @@ public class DepositServiceTest {
         double balance = service.deposit(amount);
 
         // Assert
-        Assertions.assertThat(balance).isNotEqualTo(-100.00);
 
     }
 }
