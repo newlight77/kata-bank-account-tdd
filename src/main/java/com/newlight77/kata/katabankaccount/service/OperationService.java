@@ -1,8 +1,8 @@
 package com.newlight77.kata.katabankaccount.service;
 
-public class DepositService {
+public class OperationService {
 
-    double balance = 0;
+    private double balance = 0;
 
     public double deposit(double amount) {
 
@@ -11,6 +11,13 @@ public class DepositService {
         }
 
         balance += amount;
+
+        return balance;
+    }
+
+    public double withdraw(double amount) {
+
+        balance -= amount;
 
         return balance;
     }

@@ -6,17 +6,18 @@ import org.junit.Test;
 
 public class DepositServiceTest {
 
-    private DepositService service;
+    private OperationService service;
 
     @Before
     public void init() {
-        service = new DepositService();
+
     }
 
     @Test
     public void shouldDepositAPositiveAmount() {
 
         // Arrange
+        service = new OperationService();
         double amount = 100;
 
         // Act
@@ -28,7 +29,9 @@ public class DepositServiceTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void shouldNotAllowDepositNegativeAmount() {
+
         // Arrange
+        service = new OperationService();
         double amount = -100;
 
         // Act
@@ -37,4 +40,19 @@ public class DepositServiceTest {
         // Assert
 
     }
+
+    @Test
+    public void shouldWithdraWithPositiveAmount() {
+
+        // Arrange
+        service = new OperationService();
+        double amount = 100;
+
+        // Act
+        double balance = service.withdraw(amount);
+
+        // Assert
+        Assertions.assertThat(balance).isEqualTo(-100.00);
+    }
+
 }
