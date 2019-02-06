@@ -1,5 +1,7 @@
 # Bank-Account-Kata
 
+[![Build Status](https://travis-ci.org/newlight77/kata-bank-account.svg?branch=master)](https://travis-ci.org/newlight77/kata-bank-account)
+
 ## Kata Statement
 
 Bank Account kata for practice TDD implemented by Jorge Sánchez (Xurxodev)
