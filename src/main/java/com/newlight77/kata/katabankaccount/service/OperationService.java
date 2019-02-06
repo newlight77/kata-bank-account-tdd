@@ -7,7 +7,7 @@ public class OperationService {
     public double deposit(double amount) {
 
         if (amount < 0) {
-            throw new IllegalArgumentException("The amount for deposit must be positif");
+            throw new IllegalArgumentException("The amount for deposit must be positive");
         }
 
         balance += amount;
@@ -16,6 +16,10 @@ public class OperationService {
     }
 
     public double withdraw(double amount) {
+
+        if (amount < 0) {
+            throw new IllegalArgumentException("The amount for withdraw must be positive");
+        }
 
         balance -= amount;
 
