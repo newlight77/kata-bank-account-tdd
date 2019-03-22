@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.newlight77.kata</groupId>
-	<artifactId>kata-bank-account</artifactId>
+	<artifactId>kata-bank-account-tdd</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>kata-bank-account</name>
-	<description>Demo project for Spring Boot</description>
+	<name>kata-bank-account-tdd</name>
+	<description>Kata on Bank Account using TDD</description>
 
 	<properties>
 		<java.version>1.8</java.version>
