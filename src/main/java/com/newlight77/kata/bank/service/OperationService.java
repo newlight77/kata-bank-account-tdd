@@ -1,4 +1,4 @@
-package com.newlight77.kata.katabankaccount.service;
+package com.newlight77.kata.bank.service;
 
 public class OperationService {
 

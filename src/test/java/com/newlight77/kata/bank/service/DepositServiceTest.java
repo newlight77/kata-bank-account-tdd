@@ -1,4 +1,4 @@
-package com.newlight77.kata.katabankaccount.service;
+package com.newlight77.kata.bank.service;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Before;

@@ -1,9 +1,9 @@
 # Bank-Account-Kata-TDD
 
-[![Build Status](https://travis-ci.org/newlight77/kata-bank-account.svg?branch=master)](https://travis-ci.org/newlight77/kata-bank-account)
-[![Maintainability](https://api.codeclimate.com/v1/badges/5215148bf0b74c26470a/maintainability)](https://codeclimate.com/github/newlight77/kata-bank-account/maintainability)
-[![codecov](https://codecov.io/gh/newlight77/kata-bank-account/branch/master/graph/badge.svg)](https://codecov.io/gh/newlight77/kata-bank-account)
-[![BetterCodeHub compliance](https://bettercodehub.com/edge/badge/newlight77/kata-bank-account?branch=master)](https://bettercodehub.com/)
+[![Build Status](https://travis-ci.org/newlight77/kata-bank-account-tdd.svg?branch=master)](https://travis-ci.org/newlight77/kata-bank-account-tdd)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5215148bf0b74c26470a/maintainability)](https://codeclimate.com/github/newlight77/kata-bank-account-tdd/maintainability)
+[![codecov](https://codecov.io/gh/newlight77/kata-bank-account-tdd/branch/master/graph/badge.svg)](https://codecov.io/gh/newlight77/kata-bank-account-tdd)
+[![BetterCodeHub compliance](https://bettercodehub.com/edge/badge/newlight77/kata-bank-account-tdd?branch=master)](https://bettercodehub.com/)
 
 ## Kata Statement
 
@@ -43,58 +43,21 @@ Let's translate the features above into user stories :
 
 > As a bank client, I want to make a deposit in my account.
 
->> - Given a client with an account`
->> -   and the the initial balance in that account is 0$`
->> - When he makes a deposit of 100 $
->> - Then the balance in the account is update to 100 $
-
->> - Given a client with an account
->> -   and the the initial balance in that account is 0$
->> - When he makes a deposit of 100 $
->> - Then the operation is not allowed
-
 * US2 : Withdrawal (negative not permitted)  
 
 > As a bank client, I want to withdraw money from my account.
-
->> - Given a client with an account
->> -   and the the initial balance in that account is 100$
->> - When he withdraws 100 $ from the account
->> - Then the balance in the account is update to 0 $
-
->> - Given a client with an account
->> -   and the the initial balance in that account is 100$
->> - When he withdraws -100 $ from the account
->> - Then the operation is not allowed
 
 * US3 : GetBalance  
 
 > As a bank client, I want to know the balkance in my account.
 
->> - Given a client with an account
->> -   and the the initial balance in that account is 100$
->> - When he retrieve the balance in the account
->> - Then the balance 100 $ is showed
-
 * US4 : Account statement (date, quantity, balance) 
 
 > As a bank client, I want to see my account statement.
 
->> - Given a client with an account
->> -   and the the initial balance in that account is 100$
->> -   and there are 3 operations (+100, +200 and +50)    
->> - When he retrieves the statement of the account
->> - Then the 3 operations (+100, +200 and +50) with date, amount and balance are shown
-
 * US5 : Statement printing 
 
 > As a bank client, I want to print my account statement.
-
->> - Given a client with an account
->> -   and the the initial balance in that account is 100$
->> -   and there are 3 operations (+100, +200 and +50)    
->> - When he prints the statement of the account
->> - Then the 3 operations (+100, +200 and +50) with date, amount and balance are printed
 
 ## Run it
 
